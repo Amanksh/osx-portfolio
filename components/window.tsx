@@ -80,8 +80,10 @@ export default function Window({
         isActive ? "shadow-2xl z-50" : "shadow-md z-40"
       }`}
       style={{
-        width: "700px",
-        height: "450px",
+        width: "95vw",
+        maxWidth: "700px",
+        height: "80vh",
+        maxHeight: "450px",
         left: `${position.x}px`,
         top: `${position.y}px`,
         cursor: isDragging ? "grabbing" : "default",
