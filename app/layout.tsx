@@ -3,7 +3,7 @@ import "@/app/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata = {
-  title: "macOS Portfolio",
+  title: "Portfolio",
   description: "A portfolio website inspired by macOS",
   generator: "v0.dev",
 };

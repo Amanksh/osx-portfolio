@@ -4,7 +4,16 @@ export default function ProjectsWindow() {
       title: "Digital Signage",
       description:
         "Engineered a comprehensive digital signage solution with a Next.js CMS dashboard, React.js media player, and Node.js/Express backend, enabling businesses to manage and display dynamic content across multiple screens.",
-      tech: ["Next.js", "React", "Mongodb", "Redux", "Node.js", "Express"],
+      tech: [
+        "Next.js",
+        "React",
+        "Mongodb",
+        "Redux",
+        "Node.js",
+        "Express",
+        "S3",
+        "EC2",
+      ],
       image: "/projects/cms.png",
       link: "https://cms-orion.netlify.app/",
       featured: true,
@@ -33,25 +42,33 @@ export default function ProjectsWindow() {
         "Created a lightweight React.js web-based media player optimized for Android TV browsers that renders high-quality content while minimizing resource consumption",
       tech: ["Reactjs", "Nodejs", "Mongodb", "Expressjs", "Socket.io"],
       image: "/placeholder.svg?height=150&width=300",
-      link: "#",
+      link: "https://github.com/Amanksh/media-player",
       featured: false,
     },
     {
       title: "NoteShare",
       description:
-        "Search and save recipes with filtering by ingredients, dietary restrictions, and meal types.",
-      tech: ["React Native", "Expo", "Food API", "AsyncStorage"],
+        "Built a full-stack Note Sharing platform enabling students and teachers to upload and download notes in PDF format, with support for course and semester categorization.",
+      tech: [
+        "React",
+        "Typescript",
+        "Nodejs",
+        "Mongodb",
+        "Expressjs",
+        "AWS",
+        "Render",
+      ],
       image: "/placeholder.svg?height=150&width=300",
-      link: "#",
+      link: "https://spiffy-brioche-fb0067.netlify.app/",
       featured: false,
     },
     {
       title: "BuzzNova Media",
       description:
-        "Track workouts, set goals, and visualize progress with charts and statistics.",
-      tech: ["Vue.js", "Node.js", "MongoDB", "D3.js"],
+        "Developed a dynamic dashboard for a media company using Next.js, Typescript, Tailwindcss, AcertinitUI to provide real-time analytics and insights into their content performance.",
+      tech: ["Nextjs", "Typescript", "Tailwindcss", "AcertinitUI"],
       image: "/placeholder.svg?height=150&width=300",
-      link: "#",
+      link: "https://buzznova.media/",
       featured: false,
     },
   ];
@@ -102,6 +119,7 @@ export default function ProjectsWindow() {
                   </div>
                   <a
                     href={project.link}
+                    target="_blank"
                     className="text-sm font-medium text-pink-600 hover:text-pink-700 transition-colors"
                   >
                     View Project →
@@ -141,6 +159,7 @@ export default function ProjectsWindow() {
               </div>
               <a
                 href={project.link}
+                target="_blank"
                 className="text-xs font-medium text-pink-600 hover:text-pink-700 transition-colors"
               >
                 View Project →
