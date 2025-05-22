@@ -9,7 +9,7 @@ export default function Desktop({ children }: DesktopProps) {
     <div
       className="relative w-full h-screen overflow-hidden"
       style={{
-        background: "url('/bg3.jpg')",
+        background: "url('/bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
