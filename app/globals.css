@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 220 70% 20%; /* Navy blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 330 80% 70%; /* Pink */
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 330 80% 70%; /* Pink */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 70% 10%;
+    --foreground: 210 40% 98%;
+    --card: 220 70% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 70% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 220 70% 20%; /* Navy blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 70% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 70% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 330 80% 60%; /* Pink */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 70% 25%;
+    --input: 220 70% 25%;
+    --ring: 330 80% 60%; /* Pink */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for pixelated 8-bit look */
+.pixelated {
+  image-rendering: pixelated;
+}
+
+/* Custom scrollbar for macOS feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
