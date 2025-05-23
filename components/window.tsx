@@ -93,7 +93,7 @@ export default function Window({
       {/* Window title bar */}
       <div
         ref={titleBarRef}
-        className="h-7 bg-gradient-to-r from-purple-600 to-pink-600 border-b border-navy-700 flex items-center px-3 select-none"
+        className="h-7 bg-gradient-to-r from-purple-600 to-blue-600 border-b border-navy-700 flex items-center px-3 select-none"
         onMouseDown={handleMouseDown}
         style={{ cursor: isDragging ? "grabbing" : "grab" }}
       >
