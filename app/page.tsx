@@ -1,5 +1,5 @@
 "use client";
-
+import PixelClock from "@/components/ui/Clock";
 import { useState, useEffect } from "react";
 import Desktop from "@/components/desktop";
 import Dock from "@/components/dock";
@@ -106,6 +106,7 @@ export default function HomePage() {
 
   return (
     <Desktop>
+      <PixelClock />
       {openWindows.includes("home") && (
         <Window
           id="home"
