@@ -76,7 +76,7 @@ export default function Window({
   return (
     <div
       ref={windowRef}
-      className={`absolute rounded-lg overflow-hidden shadow-2xl border border-white/20 bg-white/90 backdrop-blur-sm transition-shadow duration-200 ${
+      className={`absolute rounded-lg overflow-hidden shadow-2xl border-4 border-white/20  bg-white/90  border-dashed backdrop-blur-sm transition-shadow duration-200 ${
         isActive ? "shadow-2xl z-50" : "shadow-md z-40"
       }`}
       style={{
